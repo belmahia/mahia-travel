@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;900&family=Yesteryear&display=swap');
+.container5{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    gap: 2rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-template-areas: 
+        "header-contacto header-contacto header-contacto"
+       "section-uno   section-uno  section-dos";
+}
+
+.titulocontacto{
+    grid-area: header-contacto;
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+
+.section-uno{
+    grid-area: section-uno;
+    
+}
+
+.section-dos{
+    grid-area: section-dos;
+
+}
+.mapa{
+    height: 20px;
+    width: 100%;
+}
+
+@media (max-width: 780px){
+
+    .container5{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+         "section-uno"
+         "section-dos";
+    }
+}
+
+@media (min-width: 450px) and (max-width:779px){
+    .container5{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "header-contacto"
+        "section-uno"
+        "section-dos";
+    }
+    .mapa{
+        height: 0.5px;
+        width: 100px;
+    }
+}

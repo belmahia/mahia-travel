@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;900&family=Yesteryear&display=swap');
+
+
+.hero{
+    background-image: url("../img/piramides.jpg");
+    height: 92vh;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+}
+
+.cuadros{
+    display: grid;
+    height: 92vh;
+    width: 100%;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+           "hero     hero2";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.cuadroizq{
+    background-color: rgba(143, 11, 11, 0.575);
+    grid-area: hero;
+}
+
+.cuadroder{
+    background-color: rgba(30, 95, 84, 0);
+    grid-area: hero2;
+}
+
+.buscartitulo, .buscartitulos{
+    color: white;
+    padding: 2rem;
+}
+
+.buscartitulos{
+    background-color: rgb(143, 11, 11);
+}
+
+.form{
+    min-height: 90vh;
+    width: 90%;
+    margin: 5px auto;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+   
+}
+
+.form img{
+    align-items: center;
+}
+.formcontainer{
+    background-color: rgba(255, 255, 255, 0.781);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1em;
+    padding: 2em 1.2em;
+    margin: auto;
+    gap: 1em;
+    align-self: center;
+    grid-auto-columns: 100%;
+   
+}
+
+.form__cta{
+    font-family: roboto;
+    font-size: 1rem;
+    background-color: #089FE0;
+    color: white;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+}
+
+
+.forminput--message{
+    resize: none;
+    padding: 1em 1em;
+    margin-bottom: .5em;
+}
+
+.logoinicio{
+    padding-left: 6rem;
+    margin: 5px auto;
+}
+
+@media(max-width: 768px){
+    .hero{
+        background-color: white;
+    }
+    .cuadros{
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "hero"
+            "hero2";
+    }
+}
+
+.fotoinicionav{
+    width:auto;
+    height: 100px;
+}

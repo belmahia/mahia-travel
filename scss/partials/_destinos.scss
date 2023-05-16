@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;900&family=Yesteryear&display=swap');
+
+.py-5{
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);;
+}
+.card-img-top{
+    height: 250px;
+    width: 355px;;
+}
+.btn{
+    background-color: rgb(30, 95, 84);
+    color: white;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: rgb(143, 11, 11);
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+.carousel-item {
+    height: 300px;
+    width: 500px;
+}
+
+.carousel-item-active{
+    height: 300px;
+    width: 500px;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.btn-primary{
+    font-weight: bold;
+}
+
+.tituloinicial{
+    background-color: rgba(255, 255, 255, 0.801);
+    padding-top: 5px;
+}
+
+.textoinicial{
+    color: red;
+    justify-content: lefts;
+}
+.promociones, .nosotros, .destinos, .contacto{
+    background-color: rgb(30, 95, 84);
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgb(75, 73, 73)
+}
+.nosotros2{
+    background-color: rgb(30, 95, 84);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(75, 73, 73)
+}
