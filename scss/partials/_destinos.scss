@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;900&family=Yesteryear&display=swap');
 
+$colorprincipaluno: rgb(31, 97, 86);
+$colorprincipaldos: rgb(143, 11, 11);
+$colortitulos:  rgb(30, 95, 84);
+
+
 .py-5{
-    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);;
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 }
 .card-img-top{
     height: 250px;
     width: 355px;;
 }
+
 .btn{
-    background-color: rgb(30, 95, 84);
+    background-color: $colorprincipaluno;
     color: white;
     justify-content: center;
-}
 
-.btn:hover {
-    background: rgb(143, 11, 11);
-    color: white;
-    font-weight: bold;
+    &:hover{
+        background: $colorprincipaldos;
+        color: white;
+        font-weight: bold;
+    }
 }
 
 .navbar-brand{
@@ -26,11 +32,11 @@
 .carousel-item {
     height: 300px;
     width: 500px;
-}
 
-.carousel-item-active{
-    height: 300px;
-    width: 500px;
+    .carousel-item-active{
+        height: 300px;
+        width: 500px;
+    }
 }
 
 .card-title{
@@ -41,25 +47,21 @@
     font-weight: bold;
 }
 
-.tituloinicial{
-    background-color: rgba(255, 255, 255, 0.801);
-    padding-top: 5px;
-}
-
-.textoinicial{
-    color: red;
-    justify-content: lefts;
-}
 .promociones, .nosotros, .destinos, .contacto{
-    background-color: rgb(30, 95, 84);
+    background-color: $colortitulos;
     color: white;
     border-radius: 10px;
     justify-content: center;
     box-shadow: 2px 2px 5px rgb(75, 73, 73)
 }
 .nosotros2{
-    background-color: rgb(30, 95, 84);
+    background-color: $colortitulos;
     color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(75, 73, 73)
+}
+
+.destinostexto, .destinostitulo{
+    font-family: roboto;
+    text-align: justify;
 }

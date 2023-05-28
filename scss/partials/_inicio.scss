@@ -1,95 +1,179 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;900&family=Yesteryear&display=swap');
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
-.hero{
-    background-image: url("../img/piramides.jpg");
-    height: 92vh;
+.container{
+    max-width: 1200px;
+    margin: 0;
+}
+
+
+.tituloviaje{
+    background-image: linear-gradient(rgba(31, 97, 86, 0.5), rgba(31, 97, 86, 0.5)),url(../img/piramides.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    display:flex;
-}
-
-.cuadros{
-    display: grid;
-    height: 92vh;
-    width: 100%;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1fr ;
-    grid-template-areas: 
-           "hero     hero2";
-    column-gap: 10px;
-    row-gap: 10px;
-}
-
-.cuadroizq{
-    background-color: rgba(143, 11, 11, 0.575);
-    grid-area: hero;
-}
-
-.cuadroder{
-    background-color: rgba(30, 95, 84, 0);
-    grid-area: hero2;
-}
-
-.buscartitulo, .buscartitulos{
-    color: white;
-    padding: 2rem;
-}
-
-.buscartitulos{
-    background-color: rgb(143, 11, 11);
-}
-
-.form{
-    min-height: 90vh;
-    width: 90%;
-    margin: 5px auto;
+    min-height: 100vh;
     display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-   
-}
-
-.form img{
-    align-items: center;
-}
-.formcontainer{
-    background-color: rgba(255, 255, 255, 0.781);
-    width: 100%;
-    max-width: 600px;
-    border-radius: 1em;
-    padding: 2em 1.2em;
-    margin: auto;
-    gap: 1em;
-    align-self: center;
-    grid-auto-columns: 100%;
-   
-}
-
-.form__cta{
-    font-family: roboto;
-    font-size: 1rem;
-    background-color: #089FE0;
-    color: white;
-    border: none;
-    font-weight: 300;
-    padding: .7em 0;
-    border-radius: .2em;
-    cursor: pointer;
-    font-weight: 400;
-}
-
-.form__title{
     text-align: center;
-    font-size: 1.9rem;
-    margin-bottom: .4em;
 }
 
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.forminput--message{
-    resize: none;
-    padding: 1em 1em;
-    margin-bottom: .5em;
+}
+
+.header-content h1{
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 80px;
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+
+    justify-content: center;
+    justify-self: center;
+}
+
+.header-content p{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    padding: 200px px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    background-color: $colorprincipaluno;
+
+}
+
+.primero{
+    text-align: center;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: $colorprincipaluno;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.btn-1:hover{
+    background-color: $colorprincipaldos;
+    color: white;
+    font-weight:bold;
+}
+.fotoinicionav{
+    width:auto;
+    height: 100px;
+}
+
+.viaje{
+    padding: 100px;
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    position: relative;
+}
+
+.viaje-content{
+    text-align: center;
+}
+
+.viaje-content h2{
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 70px;
+    color: rgba(0, 0, 0, 0.884);
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p{
+    font-size: 26px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.884);
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.viaje-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.viaje-1{
+    padding: 0 25px;
+}
+
+.viaje-1 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 900px;
+}
+
+.viaje-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 200px;
+}
+
+.viaje-1 h3{
+    color: rgba(0, 0, 0, 0.884);
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.general{
+    display: flex;
+}
+
+.general-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: white;
+}
+
+.general-1 h2{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.general-1 p{
+    font-size: 16px;;
+}
+
+.general-2 {
+    background-image: url(../img/japon5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(../img/china1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
 }
 
 .logoinicio{
